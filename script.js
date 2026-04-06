@@ -13,7 +13,7 @@ window.onclick = function (event) {
   if (event.target === studentModal) {
     studentModal.style.display = "none";
   }
-
+  
   if (event.target === staffModal) {
     staffModal.style.display = "none";
   }
