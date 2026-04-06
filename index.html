@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bright Future School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Bright Future School</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#features">Facilities</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="nav-btn student-btn" onclick="openModal('studentModal')">Student Login</button>
+        <button class="nav-btn staff-btn" onclick="openModal('staffModal')">Staff Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Empowering Young Minds For A Better Tomorrow</h1>
+        <p>
+          Bright Future School provides quality education, a safe learning environment, modern facilities,
+          and strong support for every student’s academic and personal growth.
+        </p>
+        <div class="hero-buttons">
+          <button class="primary-btn" onclick="openModal('studentModal')">Student Portal</button>
+          <button class="secondary-btn" onclick="openModal('staffModal')">Staff Portal</button>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Why Choose Our School?</h3>
+        <ul>
+          <li>Experienced and dedicated teachers</li>
+          <li>Smart classrooms and digital learning</li>
+          <li>Strong academic and extracurricular support</li>
+          <li>Safe, friendly, and inspiring campus environment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="container">
+      <h2 class="section-title">Our School Facilities</h2>
+      <p class="section-subtitle">Everything students need to learn, grow, and succeed.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3>Smart Classrooms</h3>
+          <p>Modern classrooms with interactive learning tools to improve teaching and understanding.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🧪</div>
+          <h3>Science Labs</h3>
+          <p>Well-equipped science laboratories for practical learning and innovation.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💻</div>
+          <h3>Computer Lab</h3>
+          <p>Advanced computer lab for digital education, coding, and technology skill development.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🏀</div>
+          <h3>Sports Activities</h3>
+          <p>Encouraging teamwork, discipline, and fitness through indoor and outdoor sports.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Creative Programs</h3>
+          <p>Art, music, dance, and cultural activities for complete personality development.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🚌</div>
+          <h3>Transport Facility</h3>
+          <p>Safe and reliable transportation service for students from different areas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About Bright Future School</h2>
+          <p>
+            Bright Future School is committed to building confident, knowledgeable, and responsible students.
+            We believe that education is not only about marks, but also about values, discipline, and life skills.
+          </p>
+          <p>
+            Our mission is to create a supportive and inspiring learning environment where every child gets
+            the opportunity to shine academically, socially, and creatively.
+          </p>
+          <p>
+            With skilled teachers, modern infrastructure, and student-focused learning, we help shape a successful future.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1000&q=80" alt="School Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <h3>1200+</h3>
+          <p>Students</p>
+        </div>
+        <div class="stat-box">
+          <h3>80+</h3>
+          <p>Teachers</p>
+        </div>
+        <div class="stat-box">
+          <h3>25+</h3>
+          <p>Years of Excellence</p>
+        </div>
+        <div class="stat-box">
+          <h3>100%</h3>
+          <p>Growth Focused Learning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">Get in touch with our school administration.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>School Information</h3>
+          <p><strong>Address:</strong> Pune, Maharashtra, India</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> info@brightfutureschool.com</p>
+          <p><strong>Office Hours:</strong> Monday to Saturday, 8:00 AM - 4:00 PM</p>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send Message</h3>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
+          <button onclick="sendMessage()">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Bright Future School. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Student Login Modal -->
+  <div class="modal" id="studentModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('studentModal')">&times;</span>
+      <h2>Student Login</h2>
+      <input type="text" placeholder="Student ID" />
+      <input type="password" placeholder="Password" />
+      <button class="login-student-submit" onclick="studentLogin()">Login as Student</button>
+      <p class="modal-note">Enter your student credentials to continue.</p>
+    </div>
+  </div>
+
+  <!-- Staff Login Modal -->
+  <div class="modal" id="staffModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('staffModal')">&times;</span>
+      <h2>Staff Login</h2>
+      <input type="text" placeholder="Staff Email / ID" />
+      <input type="password" placeholder="Password" />
+      <button class="login-staff-submit" onclick="staffLogin()">Login as Staff</button>
+      <p class="modal-note">Authorized school staff only.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
